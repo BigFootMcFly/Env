@@ -71,6 +71,11 @@ class Env implements ArrayAccess
                 continue;
             }
 
+            // skip comment line
+            if (trim($line)[0] == '#') {
+                continue;
+            }
+
             $number++; // make line number proper
 
             $parts = explode('=', $line);
