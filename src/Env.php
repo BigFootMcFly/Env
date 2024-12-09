@@ -72,7 +72,7 @@ class Env implements ArrayAccess
             }
 
             // skip comment line
-            if (trim($line)[0] == '#') {
+            if (trim($line)[0] === '#') {
                 continue;
             }
 
